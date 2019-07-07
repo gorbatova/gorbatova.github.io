@@ -1,9 +1,23 @@
 import React from 'react'
 import './style.css'
 
+
+
 function Header() {
-  return (
-    <div className="wrap"></div>
+
+  function handleClick(e) {
+    e.preventDefault()
+  }
+
+  return React.createElement(
+    "div",
+    { className: "wrap", onClick: handleClick },
+    "something",
+    React.createElement(
+      "div",
+      null,
+      "something else"
+    )
   )
 }
 
