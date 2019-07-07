@@ -3,9 +3,7 @@ import './style.css'
 
 function Header() {
   return (
-    <div className="wrap">
-      test
-    </div>
+    <div className="wrap"></div>
   )
 }
 
