@@ -1,10 +1,7 @@
-import React from 'react';
-import Header from './components/header'
+import header from './components/header'
 
-function App() {
+export default function app() {
   return (
-    <Header/>
-  );
+    header()
+  )
 }
-
-export default App;

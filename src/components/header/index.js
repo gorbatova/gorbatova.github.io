@@ -1,24 +1,10 @@
-import React from 'react'
-import './style.css'
+import styles from './index.css'
+import { div } from '../../lib/dom'
 
-
-
-function Header() {
-
-  function handleClick(e) {
-    e.preventDefault()
-  }
-
-  return React.createElement(
-    "div",
-    { className: "wrap", onClick: handleClick },
-    "something",
-    React.createElement(
-      "div",
-      null,
-      "something else"
-    )
+export default function header() {
+  return div(
+    { className: styles.wrapp },
+    'somehting',
+    'something else'
   )
 }
-
-export default Header
