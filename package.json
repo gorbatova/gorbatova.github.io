@@ -1,0 +1,29 @@
+{
+  "name": "gorbatova.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "dev": "rollup -c -w",
+    "build": "npm run clean && NODE_ENV=production rollup --config"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gorbatova/gorbatova.github.io.git"
+  },
+  "keywords": [],
+  "author": "Valya Gorbatova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gorbatova/gorbatova.github.io/issues"
+  },
+  "homepage": "https://github.com/gorbatova/gorbatova.github.io#readme",
+  "devDependencies": {
+    "@rollup/plugin-html": "^0.2.3",
+    "rollup": "^2.41.2",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-serve": "^1.1.0"
+  }
+}
