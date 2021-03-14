@@ -1,6 +1,6 @@
 import { makeHtmlAttributes } from '@rollup/plugin-html'
 
-const mainPage = ({ attributes, bundle, files, publicPath, title  }) => {
+const indexPage = ({ attributes, bundle, files, publicPath, title  }) => {
   const scripts = (files.js || [])
     .map(({ fileName }) => {
       const attrs = makeHtmlAttributes(attributes.script)
@@ -13,7 +13,7 @@ const mainPage = ({ attributes, bundle, files, publicPath, title  }) => {
     <html${makeHtmlAttributes(attributes.html)}>
       <head>
         <meta charset="utf-8" />
-        <title>Init</title>
+        <title>${title}</title>
       </head>
       <body>
         ${scripts}
@@ -22,4 +22,4 @@ const mainPage = ({ attributes, bundle, files, publicPath, title  }) => {
   `
 }
 
-export { mainPage }
+export { indexPage }
