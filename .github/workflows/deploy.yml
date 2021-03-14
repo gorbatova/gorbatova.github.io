@@ -1,7 +1,8 @@
-name: build & deploy
+name: Build & Deploy
 
 on:
-  push
+  push:
+    branches: develop
 
 jobs:
   build-and-deploy:
