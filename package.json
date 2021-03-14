@@ -22,6 +22,7 @@
   "homepage": "https://github.com/gorbatova/gorbatova.github.io#readme",
   "devDependencies": {
     "@rollup/plugin-html": "^0.2.3",
+    "eslint": "^7.22.0",
     "rollup": "^2.41.2",
     "rollup-plugin-livereload": "^2.0.0",
     "rollup-plugin-serve": "^1.1.0"
