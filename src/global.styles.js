@@ -1,6 +1,6 @@
 import { css } from '@linaria/core'
 
-export const globals = css`
+export const globalStyles = css`
   :global() {
     html {
       box-sizing: border-box;
