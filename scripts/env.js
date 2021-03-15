@@ -1,2 +1,7 @@
-export const development = process.env.NODE_ENV == null || process.env.NODE_ENV === 'development'
-export const production = process.env.NODE_ENV === 'production'
+const development = process.env.NODE_ENV == null || process.env.NODE_ENV === 'development'
+const production = process.env.NODE_ENV === 'production'
+
+module.exports = {
+  development,
+  production
+}
