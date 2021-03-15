@@ -1,4 +1,5 @@
 const path = require('path')
+const { development } = require('../scripts/env')
 
 const rootPath = path.resolve(__dirname, '..')
 const resolvePath = (...args) => path.resolve(rootPath, ...args)
